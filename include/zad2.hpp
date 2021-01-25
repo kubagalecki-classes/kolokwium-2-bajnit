@@ -14,11 +14,12 @@ public:
     {
         if (dynamic_cast< Zielony* >(abc) != nullptr)
         {
-            return "Zielony: " + chrup();
+            return "Zielony: " + abc->chrup();
         }
         else if (dynamic_cast< Kiszony* >(abc) != nullptr)
         {
-            return "Kiszony: " + chrup();
+            return "Kiszony: " + abc->chrup();
+            ;
         }
     }
 
