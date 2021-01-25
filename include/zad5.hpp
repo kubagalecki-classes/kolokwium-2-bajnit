@@ -10,11 +10,19 @@ using namespace std;
 template < typename T >
 bool liczKolejneWarzywa(T a, T b, unsigned n, const std::string s)
 {
-    return search_n(a, b, n, s, );
+    if (search_n(a, b, n, s, ))
+    {
+        return true
+    };
+    else if
+    {
+        return false;
+    }
 }
 
 /*
-The function returns an iterator to the first of such elements, or last if no such sequence is found.
+The function returns an iterator to the first of such elements, or last if no such sequence is
+found.
 
 first, last
 Forward iterators to the initial and final positions of the searched sequence. The range used is
