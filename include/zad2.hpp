@@ -9,29 +9,30 @@ using namespace std;
 class Ogorek
 {
 public:
-    virtual std::string chrup();
-    string              jedzOgorek(Ogorek* abc)
-    {
-        if (dynamic_cast< Zielony* >(abc) != nullptr)
-        {
-            return "Zielony: " + abc->chrup();
-        }
-        else if (dynamic_cast< Kiszony* >(abc) != nullptr)
-        {
-            return "Kiszony: " + abc->chrup();
-            ;
-        }
-    }
+    virtual std::string chrup() = 0;
 
 }
 
 class Zielony : public Ogorek
 {
 public:
-    virtual std::string chrup() { return chrupZielony(); }
+    std::string chrup() { return chrupZielony(); }
 }
 
 class Kiszony : public Ogorek
 {
-    virtual std::string chrup() { return chrupKiszony(); }
+    std::string chrup() { return chrupKiszony(); }
+}
+
+string jedzOgorek(Ogorek* abc)
+{
+    if (dynamic_cast< Zielony* >(abc) != nullptr)
+    {
+        return "Zielony: " + abc->chrup();
+    }
+    else if (dynamic_cast< Kiszony* >(abc) != nullptr)
+    {
+        return "Kiszony: " + abc->chrup();
+        ;
+    }
 }
