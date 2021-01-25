@@ -9,19 +9,19 @@ using namespace std;
 class Ogorek
 {
 public:
-    virtual std::string chrup()
-
-        std::string jedzOgorek(Ogorek* abc)
+    virtual std::string chrup();
+    string              jedzOgorek(Ogorek* abc)
     {
-        if (abc == Zielony)
+        if (dynamic_cast< Zielony* >(abc) != nullptr)
         {
             return "Zielony: " + chrup();
         }
-        if (abc == Kiszony)
+        else if (dynamic_cast< Kiszony* >(abc) != nullptr)
         {
             return "Kiszony: " + chrup();
         }
     }
+
 }
 
 class Zielony : public Ogorek
