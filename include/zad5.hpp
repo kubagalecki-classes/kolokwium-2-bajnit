@@ -14,7 +14,7 @@ bool liczKolejneWarzywa(T a, T b, unsigned n, const std::string s)
     {
         return true
     };
-    else if
+    else
     {
         return false;
     }
