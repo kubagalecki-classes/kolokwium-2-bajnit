@@ -14,6 +14,8 @@ bool liczKolejneWarzywa(T a, T b, unsigned n, const std::string s)
 }
 
 /*
+The function returns an iterator to the first of such elements, or last if no such sequence is found.
+
 first, last
 Forward iterators to the initial and final positions of the searched sequence. The range used is
 [first,last), which contains all the elements between first and last, including the element pointed
