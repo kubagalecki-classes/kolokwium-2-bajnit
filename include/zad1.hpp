@@ -16,7 +16,7 @@ private:
     std::string            nazwa;
     double                 cena;
     int                    kolor;
-    inline static unsigned liczba_warzyw;
+    inline static unsigned liczba_warzyw = 0;
 
 public:
     Warzywo(const std::string& s, double d, int i)
