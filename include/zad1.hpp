@@ -13,10 +13,10 @@ using namespace std;
 class Warzywo
 {
 private:
-    std::string     nazwa;
-    double          cena;
-    int             kolor;
-    static unsigned liczba_warzyw;
+    std::string            nazwa;
+    double                 cena;
+    int                    kolor;
+    inline static unsigned liczba_warzyw;
 
 public:
     Warzywo(const std::string& s, double d, int i)
