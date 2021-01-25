@@ -24,7 +24,7 @@ class Kiszony : public Ogorek
     std::string chrup() { return chrupKiszony(); }
 }
 
-string jedzOgorek(Ogorek* abc)
+std::string jedzOgorek(Ogorek* abc)
 {
     if (dynamic_cast< Zielony* >(abc) != nullptr)
     {
